@@ -98,3 +98,46 @@ git push
 - 新项目不用重新生成
 - `git push` 永远免密
 - 这就是公司多人协作标准流程
+
+
+
+
+
+# 新项目完整流程（你照着抄，永远不会错）
+
+### 第一步：本地新建项目文件夹
+
+bash
+
+运行
+
+```
+git init
+```
+
+### 第二步：**去 GitHub 网页上新建一个空仓库**
+
+（必须新建！不能用老的！）
+
+### 第三步：把本地新项目关联到**新仓库**
+
+bash
+
+运行
+
+```
+git remote add origin git@github.com:你的用户名/新项目仓库.git
+```
+
+### 第四步：提交推送
+
+bash
+
+运行
+
+```
+git add .
+git commit -m "新项目初始化"
+git push -u origin main
+```
+
